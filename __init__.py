@@ -1,24 +1,24 @@
-def calcular_nota(resp_, gab):
-    nota = 0
-    for x in range(len(gab)):
-        if resp_[x] == gab[x]:
-            nota = nota + 1
-    return nota
+def calculate_grade (answer_, feed):
+    grade = 0
+    for x in range (len (feed)):
+        if answer_ [x] == feed [x]:
+            grade = grade + 1
+    return grade
 
-num_questoes = int(input('Número de questões: '))
-gabarito = input('Gabarito: ')
-numAlunos = int(input('Quantidade de alunos: '))
+numQuestions = int (input ('Number of questions:'))
+feedback = input ('Feedback:')
+numStudents = int (input ('Number of students:'))
 
-if numAlunos>100:
-    print('Número de alunos excedeu')
+if numStudents > 100:
+    print('Numer of studentes exceeded')
 
-for i in range(numAlunos):
-    resp = input('Resposta do aluno: ')
-    nota = calcular_nota(resp, gabarito)
-    media = (nota/num_questoes)
-    print('Nota: ', media)
+for i in range (numStudents):
+    answer = input ('Student response:')
+    grade = calculate_grade (answer, feedback)
+    media = (grade / numQuestions)
+    print('Grade:', media)
 
-    if media >= 7 and media < 10:
-        print('Aprovado')
+    if media > 7:
+        print('Approved')
     else:
-        print('Reprovado')
+        print('Failed')
