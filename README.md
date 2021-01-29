@@ -1,13 +1,13 @@
 # School
 
-## Digite a quantidade de questões
-### Ex: 5
+### Number of questions:
+#### Ex: 5
 
-## Digite o gabarito
-### Ex: ABBCCA
+### List of answers to the test:
+#### Ex: ABBCCA
 
-## Digite a quantidade de alunos
-### Ex: 2
+### Number of students:
+#### Ex: 2
 
-## Digite as questões dos alunos
-### Ex: AABCCA
+### Student answers:
+#### Ex: AABCCA
